@@ -1,6 +1,6 @@
 # UniWa Book Store
 
-Simple CRUD application made for a university course 
+Simple CRUD application made for a university course.
 
 ## Getting Started
 
@@ -20,6 +20,11 @@ Now install the dependencies
 cd backend
 npm install
 ```
+Open another terminal in folder.
+```shell
+cd frontend
+npm install
+```
 
 We are almost done, Now just start the development server.
 
@@ -37,25 +42,11 @@ npm start
 ```
 Done! Now open localhost:3000 in your browser.
 
-## Running the tests
+## Examples
 
-Explain how to run the automated tests for this system
+### Books Page
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+![Screenshot 2023-12-07 at 18 10 23](https://github.com/MG04/my-bookstore/assets/22136162/f207c4e5-ee0b-4cb4-93f4-8e54d8daf949)
 
 
 ## Authors
