@@ -59,5 +59,8 @@ Done! Now open localhost:3000 in your browser.
 
 ## Authors
 
-**Marios Gura** - 20390041 - [MG04](https://github.com/MG04)
+**ΜΑΡΙΟΣ ΓΚΟΥΡΑ** - 20390041 - [MG04](https://github.com/MG04)
+**ΣΤΥΛΙΑΝΟΣ ΠΑΠΑΚΟΣΤΩΠΟΥΛΟΣ** - 20390
+**ΑΓΓΕΛΟΣ ΤΣΕΚΟΥΡΑΣ** - 2039
+**ΓΙΑΝΝΗΣ ΔΡΑΚΟΣ** - 2039
 
