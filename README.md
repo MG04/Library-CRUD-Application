@@ -13,6 +13,7 @@ Simple CRUD application made for a university course.
 - [Nodejs](https://nodejs.org/en/download)
 
 The above should be installed.
+
 Follow the commands below to kickstart the application.
 ```shell
 git clone [https://github.com/MG04/my-bookstore]
@@ -65,9 +66,9 @@ Done! Now open localhost:3000 in your browser.
 
 **ΜΑΡΙΟΣ ΓΚΟΥΡΑ** - 20390041 - [MG04](https://github.com/MG04)
 
-**ΣΤΥΛΙΑΝΟΣ ΠΑΠΑΚΟΣΤΩΠΟΥΛΟΣ** - 20390
+**ΣΤΥΛΙΑΝΟΣ ΠΑΠΑΚΟΣΤΩΠΟΥΛΟΣ** - 20390276 - 
 
-**ΑΓΓΕΛΟΣ ΤΣΕΚΟΥΡΑΣ** - 2039
+**ΑΓΓΕΛΟΣ ΤΣΕΚΟΥΡΑΣ** - 20390240 - 
 
-**ΓΙΑΝΝΗΣ ΔΡΑΚΟΣ** - 2039
+**ΓΙΑΝΝΗΣ ΔΡΑΚΟΣ** - 20390060 - 
 
