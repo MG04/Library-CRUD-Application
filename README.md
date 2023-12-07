@@ -16,8 +16,8 @@ The above should be installed.
 
 Follow the commands below to kickstart the application.
 ```shell
-git clone [https://github.com/MG04/my-bookstore]
-cd my-bookstore
+git clone [https://github.com/MG04/UniWa-Library]
+cd UniWa-Library-main
 ```
 
 Now install the dependencies
