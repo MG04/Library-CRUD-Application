@@ -68,7 +68,7 @@ Done! Now open localhost:3000 in your browser.
 
 **ΣΤΥΛΙΑΝΟΣ ΠΑΠΑΚΟΣΤΩΠΟΥΛΟΣ** - 20390276 - [stelios1685](https://github.com/stelios1685)
 
-**ΑΓΓΕΛΟΣ ΤΣΕΚΟΥΡΑΣ** - 20390240 - 
+**ΑΓΓΕΛΟΣ ΤΣΕΚΟΥΡΑΣ** - 20390240 - [Giannis13811](https://github.com/Giannis13811)
 
 **ΓΙΑΝΝΗΣ ΔΡΑΚΟΣ** - 20390060 - 
 
