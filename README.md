@@ -60,6 +60,5 @@ Give an example
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+**Marios Gura** - [MG04](https://github.com/MG04)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
