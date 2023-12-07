@@ -11,8 +11,8 @@ Simple CRUD application made for a university course
 Both should be installed.
 
 ```shell
-git clone https://github.com/koolkishan/chat-app-react-nodejs
-cd chat-app-react-nodejs
+git clone [https://github.com/MG04/my-bookstore]
+cd my-bookstore
 ```
 
 Now install the dependencies
