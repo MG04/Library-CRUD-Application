@@ -2,11 +2,15 @@
 
 Simple CRUD application made for a university course.
 
+## Technologies used
+- [React](https://react.dev/)
+- [Nodejs](https://nodejs.org)
+- [MySQL](https://www.mysql.com)
+
 ## Getting Started
 
 ### Prerequisites
 - [Nodejs](https://nodejs.org/en/download)
-- [MySQL](https://www.mysql.com/downloads/)
 
 Both should be installed.
 
