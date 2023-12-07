@@ -1,4 +1,4 @@
-# UniWa Book Store
+# UniWa Library Management
 
 Simple CRUD application made for a university course.
 
@@ -12,8 +12,8 @@ Simple CRUD application made for a university course.
 ### Prerequisites
 - [Nodejs](https://nodejs.org/en/download)
 
-Both should be installed.
-
+The above should be installed.
+Follow the commands below to kickstart the application.
 ```shell
 git clone [https://github.com/MG04/my-bookstore]
 cd my-bookstore
