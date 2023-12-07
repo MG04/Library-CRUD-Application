@@ -59,4 +59,4 @@ jobs:
           app-name: 'UniWa-Library'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4461F740C0C943948E9A93E25A0AB53F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_80F07E9E181B452C8CF8D815B62E95CC }}
