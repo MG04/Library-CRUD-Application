@@ -52,6 +52,10 @@ Done! Now open localhost:3000 in your browser.
 
 ![image](https://github.com/MG04/my-bookstore/assets/22136162/db3f4a4d-c89a-449e-b587-c5905a53e9d3)
 
+### Update Page
+
+![image](https://github.com/MG04/my-bookstore/assets/22136162/c9e38d05-214a-4bf8-a57a-68a176b2055b)
+
 
 ## Authors
 
