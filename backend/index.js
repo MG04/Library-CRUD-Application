@@ -1,4 +1,13 @@
 import express from "express";
+import cors from "cors";
+
+// ORM
+import { PrismaClient } from "@prisma/client";
+const prisma = new PrismaClient();
+
+app.use(cors());
+const app = express();
+app.use(express.json());
 
 // ORM
 import { PrismaClient } from "@prisma/client";
