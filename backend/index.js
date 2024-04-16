@@ -5,15 +5,8 @@ import cors from "cors";
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
+const app = express();
 app.use(cors());
-const app = express();
-app.use(express.json());
-
-// ORM
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
-
-const app = express();
 app.use(express.json());
 
 app.get("/books", async (req, res) => {
