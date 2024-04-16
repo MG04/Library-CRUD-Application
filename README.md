@@ -25,11 +25,14 @@ Now install the dependencies
 ```shell
 cd backend
 npm install
+npm install @prisma/client --save
+npx prisma generate
 ```
 Open another terminal in folder.
 ```shell
 cd frontend
 npm install
+npm install @prisma/client --save
 ```
 
 We are almost done, Now just start the development server.
