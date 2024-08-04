@@ -1,9 +1,6 @@
 import express from "express";
 import cors from "cors";
-
-// ORM
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import book from "./book.js";
 
 const app = express();
 app.use(cors());
@@ -11,7 +8,7 @@ app.use(express.json());
 
 app.get("/books", async (req, res) => {
   try {
-    const books = await prisma.books.findMany();
+    const books = await book.findAll();
     res.json(books);
   } catch (err) {
     console.error(err);
@@ -21,13 +18,11 @@ app.get("/books", async (req, res) => {
 
 app.post("/books", async (req, res) => {
   try {
-    const newBook = await prisma.books.create({
-      data: {
-        title: req.body.title,
-        desc: req.body.desc,
-        price: req.body.price ? parseFloat(req.body.price) : null, // Handle optional price
-        cover: req.body.cover,
-      },
+    const newBook = await book.create({
+      title: req.body.title,
+      description: req.body.description,
+      price: req.body.price ? parseFloat(req.body.price) : null, // Handle optional price
+      cover: req.body.cover,
     });
     res.json(newBook);
   } catch (err) {
@@ -39,7 +34,7 @@ app.post("/books", async (req, res) => {
 app.delete("/books/:id", async (req, res) => {
   try {
     const bookId = parseInt(req.params.id); // Ensure ID is parsed as an integer
-    const deletedBook = await prisma.books.delete({
+    const deletedBook = await book.destroy({
       where: { id: bookId },
     });
     if (deletedBook) {
@@ -56,17 +51,13 @@ app.delete("/books/:id", async (req, res) => {
 app.put("/books/:id", async (req, res) => {
   try {
     const bookId = parseInt(req.params.id); // Ensure ID is parsed as an integer
-    const updatedBookData = {
-      title: req.body.title,
-      desc: req.body.desc,
-      price: req.body.price ? parseFloat(req.body.price) : null, // Handle optional price
-      cover: req.body.cover,
-    };
 
-    const updatedBook = await prisma.books.update({
-      where: { id: bookId },
-      data: updatedBookData,
-    });
+    const updatedBook = await book.findByPk(bookId);
+    updatedBook.title = req.body.title;
+    updatedBook.description = req.body.description;
+    updatedBook.price = req.body.price;
+    updatedBook.cover = req.body.cover;
+    await updatedBook.save();
 
     if (updatedBook) {
       res.json(updatedBook);
