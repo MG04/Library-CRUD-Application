@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 const Add = () => {
   const [book, setBook] = useState({
     title: "",
-    desc: "",
+    description: "",
     price: null,
     cover: "",
   });
@@ -68,11 +68,7 @@ const Add = () => {
       </button>
       <div class="footer">
         &copy;<span id="year"> </span>
-        <span>
-          {" "}
-          ΜΑΡΙΟΣ ΓΚΟΥΡΑ, ΑΓΓΕΛΟΣ ΤΣΕΚΟΥΡΑΣ, ΙΩΑΝΝΗΣ ΔΡΑΚΟΣ, ΣΤΥΛΙΑΝΟΣ
-          ΠΑΠΑΚΩΣΤΟΠΟΥΛΟΣ{" "}
-        </span>
+        <span> ΜΑΡΙΟΣ ΓΚΟΥΡΑ </span>
       </div>
     </div>
   );
