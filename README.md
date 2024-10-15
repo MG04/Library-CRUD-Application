@@ -17,8 +17,8 @@ The above should be installed.
 
 Follow the commands below to kickstart the application.
 ```shell
-git clone https://github.com/MG04/UniWa-Library
-cd UniWa-Library
+git clone https://github.com/MG04/Library-CRUD-Application
+cd Library-CRUD-Application
 ```
 
 Now install the dependencies
@@ -60,11 +60,12 @@ Done! Now open localhost:3000 in your browser.
 
 ### Add Page
 
-![image](https://github.com/user-attachments/assets/fdbe000f-ca1b-4d4d-80a2-f6af6964996c)
+![image](https://github.com/user-attachments/assets/dc3b6484-3205-4f8b-aa3c-7521dfaa1f26)
 
 
 ### Update Page
 
 ![image](https://github.com/user-attachments/assets/8cebef99-ab5d-45c4-a975-b0165afb1b7b)
+
 
 ## Docker containerization
