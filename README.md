@@ -1,4 +1,4 @@
-# UniWa Library Management 
+# Library Management 
 
 Simple CRUD application made for a university course.
 
