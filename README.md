@@ -55,24 +55,16 @@ Done! Now open localhost:3000 in your browser.
 
 ### Books Page
 
-![Screenshot 2023-12-07 at 18 10 23](https://github.com/MG04/my-bookstore/assets/22136162/f207c4e5-ee0b-4cb4-93f4-8e54d8daf949)
+![image](https://github.com/user-attachments/assets/c334ca5b-b0a7-4618-a254-b93c78bae42d)
+
 
 ### Add Page
 
-![image](https://github.com/MG04/my-bookstore/assets/22136162/db3f4a4d-c89a-449e-b587-c5905a53e9d3)
+![image](https://github.com/user-attachments/assets/fdbe000f-ca1b-4d4d-80a2-f6af6964996c)
+
 
 ### Update Page
 
-![image](https://github.com/MG04/my-bookstore/assets/22136162/c9e38d05-214a-4bf8-a57a-68a176b2055b)
+![image](https://github.com/user-attachments/assets/8cebef99-ab5d-45c4-a975-b0165afb1b7b)
 
-
-## Authors
-
-**ΜΑΡΙΟΣ ΓΚΟΥΡΑ** - 20390041 - [MG04](https://github.com/MG04)
-
-**ΣΤΥΛΙΑΝΟΣ ΠΑΠΑΚΟΣΤΩΠΟΥΛΟΣ** - 20390276 - [stelios1685](https://github.com/stelios1685)
-
-**ΑΓΓΕΛΟΣ ΤΣΕΚΟΥΡΑΣ** - 20390240 - [S3nzawa](https://github.com/S3nzawa)
-
-**ΓΙΑΝΝΗΣ ΔΡΑΚΟΣ** - 20390060 - [Giannis13811](https://github.com/Giannis13811)
-
+## Docker containerization
