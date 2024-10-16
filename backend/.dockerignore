@@ -1,7 +1,0 @@
-**/*.env
-
-# Dependencies
-**/node_modules
-
-# Other unnecessary files or directories
-.git/

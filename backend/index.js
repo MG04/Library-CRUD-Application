@@ -1,6 +1,8 @@
 import express from "express";
 import cors from "cors";
-import book from "./book.js";
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
 
 const app = express();
 app.use(cors());
@@ -8,7 +10,7 @@ app.use(express.json());
 
 app.get("/books", async (req, res) => {
   try {
-    const books = await book.findAll();
+    const books = await prisma.books.findMany();
     res.json(books);
   } catch (err) {
     console.error(err);
@@ -18,13 +20,15 @@ app.get("/books", async (req, res) => {
 
 app.post("/books", async (req, res) => {
   try {
-    const newBook = await book.create({
-      title: req.body.title,
-      description: req.body.description,
-      price: req.body.price ? parseFloat(req.body.price) : null, // Handle optional price
-      cover: req.body.cover,
+    const newBook = await prisma.books.create({
+      data: {
+        title: req.body.title,
+        description: req.body.description,
+        price: req.body.price ? parseFloat(req.body.price) : null, // Handle optional price
+        cover: req.body.cover,
+      },
     });
-    res.json(newBook);
+    res.status(200).json({ message: "Success - Book created" });
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: "Error creating book" });
@@ -34,17 +38,15 @@ app.post("/books", async (req, res) => {
 app.delete("/books/:id", async (req, res) => {
   try {
     const bookId = parseInt(req.params.id); // Ensure ID is parsed as an integer
-    const deletedBook = await book.destroy({
+    const deletedBook = await prisma.books.delete({
       where: { id: bookId },
     });
     if (deletedBook) {
       res.json({ message: "Book deleted successfully" });
-    } else {
-      res.status(404).json({ message: "Book not found" });
     }
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "Error deleting book" });
+    res.status(500).json({ message: "Error deleting book OR Book not found" });
   }
 });
 
@@ -52,21 +54,22 @@ app.put("/books/:id", async (req, res) => {
   try {
     const bookId = parseInt(req.params.id); // Ensure ID is parsed as an integer
 
-    const updatedBook = await book.findByPk(bookId);
-    updatedBook.title = req.body.title;
-    updatedBook.description = req.body.description;
-    updatedBook.price = req.body.price;
-    updatedBook.cover = req.body.cover;
-    await updatedBook.save();
+    const updatedBook = await prisma.books.update({
+      where: { id: bookId },
+      data: {
+        title: req.body.title,
+        description: req.body.description,
+        price: req.body.price,
+        cover: req.body.cover,
+      },
+    });
 
     if (updatedBook) {
-      res.json(updatedBook);
-    } else {
-      res.status(404).json({ message: "Book not found" });
+      res.status(200).json({ message: "Book updated successfully" });
     }
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: "Error updating book" });
+    res.status(500).json({ message: "Error updating book OR Book not found" });
   }
 });
 
