@@ -24,7 +24,10 @@ const Update = async () => {
     e.preventDefault();
 
     try {
-      await axios.put(`http://localhost:8800/books/${bookId}`, book);
+      await axios.put(
+        `https://library-crud-application-backend.vercel.app/books/${bookId}`,
+        book
+      );
       navigate("/");
     } catch (err) {
       console.log(err);
