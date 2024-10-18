@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-const Update = () => {
+const Update = async () => {
   const [book, setBook] = useState({
     title: "",
     description: "",
@@ -45,7 +45,7 @@ const Update = () => {
         rows={5}
         type="text"
         placeholder="Book desc"
-        name="desc"
+        name="description"
         onChange={handleChange}
       />
       <input

@@ -10,9 +10,9 @@ datasource db {
 
 /// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model books {
-  id          Int     @id @default(autoincrement())
+  id          Int      @id @default(autoincrement())
   title       String
   description String?
-  price       Float?  @db.Real
+  price       Decimal? @db.Decimal
   cover       String?
 }
