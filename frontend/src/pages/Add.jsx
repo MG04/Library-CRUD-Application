@@ -69,10 +69,6 @@ const Add = () => {
           ← See all books{" "}
         </Link>
       </button>
-      <div class="footer">
-        &copy;<span id="year"> </span>
-        <span> ΜΑΡΙΟΣ ΓΚΟΥΡΑ </span>
-      </div>
     </div>
   );
 };

@@ -68,10 +68,6 @@ const Books = () => {
           + Add new book
         </Link>
       </button>
-      <div class="footer">
-        &copy;<span id="year"> </span>
-        <span> ΜΑΡΙΟΣ ΓΚΟΥΡΑ </span>
-      </div>
     </div>
   );
 };
