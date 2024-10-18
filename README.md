@@ -23,5 +23,5 @@ Simple CRUD application made for a university course.
 
 ![image](https://github.com/user-attachments/assets/8cebef99-ab5d-45c4-a975-b0165afb1b7b)
 
-
-## Docker containerization
+## Notes
+Response time may be slow due to free deployment server.
