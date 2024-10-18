@@ -24,7 +24,7 @@ const Update = () => {
     e.preventDefault();
 
     try {
-      await axios.put(`${BACKEND_URL}/books/${bookId}`, book);
+      await axios.put(`${process.env.BACKEND_URL}/books/${bookId}`, book);
       navigate("/");
     } catch (err) {
       console.log(err);

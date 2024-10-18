@@ -21,7 +21,7 @@ const Add = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`${BACKEND_URL}/books`, book);
+      await axios.post(`${process.env.BACKEND_URL}/books`, book);
       navigate("/");
     } catch (err) {
       console.log(err);
