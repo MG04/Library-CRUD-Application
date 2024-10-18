@@ -11,7 +11,9 @@ const Books = () => {
   useEffect(() => {
     const fetchAllBooks = async () => {
       try {
-        const res = await axios.get(`${BACKEND_URL}/books`);
+        const res = await axios.get(
+          "https://library-crud-application-backend.vercel.app/books"
+        );
         setBooks(res.data);
       } catch (err) {
         console.log(err);
@@ -22,7 +24,9 @@ const Books = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`${BACKEND_URL}/books/${id}`);
+      await axios.delete(
+        `https://library-crud-application-backend.vercel.app/books/${id}`
+      );
       window.location.reload();
     } catch (err) {
       console.log(err);
