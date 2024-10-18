@@ -20,8 +20,6 @@ const Books = () => {
     fetchAllBooks();
   }, []);
 
-  console.log(books);
-
   const handleDelete = async (id) => {
     try {
       await axios.delete(`${process.env.BACKEND_URL}/books/${id}`);
