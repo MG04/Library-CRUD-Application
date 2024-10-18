@@ -45,7 +45,7 @@ const Add = () => {
         rows={5}
         type="text"
         placeholder="Book desc"
-        name="desc"
+        name="description"
         onChange={handleChange}
       />
       <input
