@@ -22,7 +22,7 @@ const Books = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`${process.env.BACKEND_URL}/books/${id}`);
+      await axios.delete(`${BACKEND_URL}/books/${id}`);
       window.location.reload();
     } catch (err) {
       console.log(err);
