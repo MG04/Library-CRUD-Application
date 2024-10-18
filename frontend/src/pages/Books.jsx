@@ -11,7 +11,7 @@ const Books = () => {
   useEffect(() => {
     const fetchAllBooks = async () => {
       try {
-        const res = await axios.get(`${process.env.BACKEND_URL}/books`);
+        const res = await axios.get(`${BACKEND_URL}/books`);
         setBooks(res.data);
       } catch (err) {
         console.log(err);
