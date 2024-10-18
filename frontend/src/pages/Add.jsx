@@ -21,10 +21,7 @@ const Add = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(
-        "https://library-crud-application-backend.vercel.app/books",
-        book
-      );
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/books`, book);
       navigate("/");
     } catch (err) {
       console.log(err);

@@ -25,7 +25,7 @@ const Update = () => {
 
     try {
       await axios.put(
-        `https://library-crud-application-backend.vercel.app/books/${bookId}`,
+        `${process.env.REACT_APP_BACKEND_URL}/books/${bookId}`,
         book
       );
       navigate("/");
